@@ -1,0 +1,180 @@
+body{
+    margin: 0;
+    background: #56ccf2; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #56ccf2, #2f80ed); /* Chrome 10-25, Safari 5.1-6 */
+ 
+    
+    color: #000046;
+    
+}
+
+.about h2{
+    font-size: 24px;
+}
+.about h2:hover{
+    color: white;
+    cursor: pointer;
+}
+a{
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    color: white;
+}
+/* url(notesapp2.jpg) , */
+nav{
+
+    display: flex;
+    
+    align-items: center;
+    padding:  20px 0;
+}
+
+nav .box{
+margin-right: auto;
+}
+
+
+
+nav h1{
+    
+    cursor: pointer;
+    display:  inline-block;
+    margin: 0;
+    padding: 0 20px;
+    font-size: 50px;
+    
+}
+nav h2{
+    font-size: 20px;
+    display: block;
+    padding: 0 20px;
+    margin : 0;
+   
+}
+nav h1:hover{
+    /* transform: scale(1.2,1.2); */
+    text-shadow: 1px 1px 15px white;
+}
+
+button{
+    color: white;
+    background-color: #405476;
+    border: 0px;
+    font-size: 15px;
+    padding: 8px 20px;
+    margin: 5px 0;
+    cursor:pointer; 
+}
+
+#addingNote{
+    background-color:#dddddd;;
+    color: black;
+}
+
+#entertext{
+    display: block;
+    width: 100%;
+    min-height: 100px;
+    font-size: 18px;
+    border: 2px solid #405476;
+}
+
+.user h1{
+    font-size: 40px;
+    color: black;;
+}
+.user {
+    color: rgb(19, 23, 29);
+    width: 50%;
+    margin: auto;
+}
+#allnotes{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: center;
+    margin: 40px;
+}
+.note{
+    border: 1px solid black;
+    width: 25%;
+    margin: 10px 15px;
+    padding: 10px;
+    min-height: 130px;
+}
+.area{
+    min-height: 90%;
+    border: 1px solid #2c3e50;
+    font-size: 18px;
+    max-height: 250px;
+    overflow : auto;
+    padding: 0 5px;
+}
+/* .note button{
+    margin: 8px 0;
+    padding: 10px 20px;
+    font-size: 12px;
+} */
+.area{
+    background-color:rgba(245,245,245,0.8);
+}
+
+
+
+
+textarea,button,input{
+    outline: 0px;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    letter-spacing: 1px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+#people{
+    width: 250px;
+    position: fixed;
+    left: 0px;
+    bottom: 300px;
+}
+img{
+    width: 100%;
+}
+@media screen and (max-width: 800px)
+{
+    nav{
+        justify-content: center;
+        text-align: center;
+    }
+    .search
+    {
+        display: none;
+    }
+    .user{
+        width: 90%;
+    }
+    #usertext,
+    #entertext{
+        width: 100%;
+    }
+    .allnotes{
+        flex-direction: column;
+    }
+    .note{
+        width: 100%;
+        height: 20%;
+    }
+}
