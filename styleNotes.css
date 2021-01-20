@@ -155,13 +155,8 @@ img{
 }
 @media screen and (max-width: 800px)
 {
-    nav{
-        justify-content: center;
-        text-align: center;
-    }
-    .search
-    {
-        display: none;
+    nav h2,h1{
+       font-size: 20px;
     }
     .user{
         width: 90%;
@@ -170,11 +165,31 @@ img{
     #entertext{
         width: 100%;
     }
-    .allnotes{
-        flex-direction: column;
-    }
     .note{
+        margin: 10px 0;
         width: 100%;
         height: 20%;
+        border: 0px;
+    }
+}
+@media screen and (max-width : 380px)
+{
+    #allnotes{
+        flex-direction: column;
+        margin: 5px 0;
+    }
+    
+    
+    .note{
+        margin: 10px 0px;
+        width: 100%;
+        height: 20%;
+        border: 0px;
+    }
+   .user h1{
+       font-size: 25px !important;
+   }
+    nav h1{
+        font-size: 38px !important;
     }
 }
