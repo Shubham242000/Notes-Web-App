@@ -39,7 +39,7 @@ nav{
     display: flex;
     
     align-items: center;
-    padding:  20px 0;
+   padding:  20px 15px;
 }
 
 nav .box{
