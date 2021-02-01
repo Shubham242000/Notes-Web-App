@@ -1,12 +1,14 @@
 body{
     margin: 0;
-    background: #56ccf2; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #56ccf2, #2f80ed); /* Chrome 10-25, Safari 5.1-6 */
- 
+    /* background: #56ccf2; /* fallback for old browsers */
+    /* background: -webkit-linear-gradient(to right, #56ccf2, #2f80ed); Chrome 10-25, Safari 5.1-6 */ 
+    background-image: url(background-textures.png);
+    background-size: cover;
     
-    color: #000046;
+    color: white;
     
 }
+
 
 .about h2{
     font-size: 24px;
@@ -14,16 +16,22 @@ body{
 .about h2:hover{
     color: white;
     cursor: pointer;
+    text-shadow: 1px 1px 25px white;
 }
 a{
     display: block;
     font-size: 24px;
     font-weight: bold;
-    color: black;
+    color: #e5e5f0;
     text-decoration: none;
 }
 a:hover{
     color: white;
+    text-decoration: ;
+}
+.feedback a:hover{
+    color: white;
+    text-shadow: 1px 1px 15px white;
 }
 /* url(notesapp2.jpg) , */
 nav{
@@ -49,6 +57,9 @@ nav h1{
     font-size: 50px;
     
 }
+nav h1:hover{
+    color: white;
+}
 nav h2{
     font-size: 20px;
     display: block;
@@ -63,12 +74,13 @@ nav h1:hover{
 
 button{
     color: white;
-    background-color: #405476;
+    background-color: black;
     border: 0px;
     font-size: 15px;
     padding: 8px 20px;
     margin: 5px 0;
     cursor:pointer; 
+    border-radius: 10px;
 }
 
 #addingNote{
@@ -86,7 +98,7 @@ button{
 
 .user h1{
     font-size: 40px;
-    color: black;;
+    color: white;
 }
 .user {
     color: rgb(19, 23, 29);
@@ -101,11 +113,12 @@ button{
     margin: 40px;
 }
 .note{
-    border: 1px solid black;
+    
     width: 25%;
     margin: 10px 15px;
     padding: 10px;
     min-height: 130px;
+    border-radius: 10px;
 }
 .area{
     min-height: 90%;
@@ -114,6 +127,7 @@ button{
     max-height: 250px;
     overflow : auto;
     padding: 0 5px;
+    border-radius: 16px;
 }
 /* .note button{
     margin: 8px 0;
@@ -121,14 +135,18 @@ button{
     font-size: 12px;
 } */
 .area{
-    background-color:rgba(245,245,245,0.8);
+    background-color:rgba(245,245,245,1);
+    color: black;
 }
 
 
 
-
+textarea{
+    padding: 10px;
+}
 textarea,button,input{
     outline: 0px;
+    border-radius: 20px;
 }
 
 footer{
@@ -152,6 +170,9 @@ footer{
 }
 img{
     width: 100%;
+}
+button:hover{
+   background-color: #3D3242
 }
 @media screen and (max-width: 800px)
 {
@@ -193,3 +214,4 @@ img{
         font-size: 38px !important;
     }
 }
+
