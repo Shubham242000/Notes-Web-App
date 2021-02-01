@@ -3,7 +3,7 @@
 document.getElementById("entertext").addEventListener("focus",chng); //changes color of addNote button when input is being given
 function chng()
 {
-    document.getElementById("addingNote").style.backgroundColor = "#405476";
+    document.getElementById("addingNote").style.backgroundColor = "black";
     document.getElementById("addingNote").style.color = "white";
 }
 
@@ -71,7 +71,7 @@ function showNotes()
 
     let html = "";
 
-    for (let index = 0; index < notesObj.length; index++) {
+    for (let index = notesObj.length-1; index >= 0 ; index--) {
         const element = notesObj[index];
         html += `  <div class="note">
          		<div class="area">
@@ -144,6 +144,7 @@ function linkedin()
 {
     window.open("https://www.linkedin.com/in/shubham-shrivastava-2000/");
 }
+
 
 
 
