@@ -14,7 +14,7 @@ function wbs(){
 
 
 document.getElementsByClassName("about")[0].onclick = function(){
-    alert("This is a Note Taking Website made using pure HTML, CSS and Javascript which allows user to Store and Delete Notes");
+   location.assign("/about.html")
 }
 
 
