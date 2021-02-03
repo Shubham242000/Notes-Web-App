@@ -14,7 +14,7 @@ function wbs(){
 
 
 document.getElementsByClassName("about")[0].onclick = function(){
-   location.assign("/about.html")
+   location.assign("https://shubham242000.github.io/AboutNotes/")
 }
 
 
